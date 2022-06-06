@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TestMapEsri</string>
+
+
+    <string-array name="layers_array">
+        <item>Lat and Long</item>
+        <item>MGRS Grid</item>
+        <item>UTM Grid</item>
+        <item>USNG Grid</item>
+    </string-array>
+    <string-array name="colors_array">
+        <item>Red</item>
+        <item>White</item>
+        <item>Blue</item>
+
+    </string-array>
+</resources>

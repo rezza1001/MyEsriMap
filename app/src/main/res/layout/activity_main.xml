@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.esri.arcgisruntime.mapping.view.MapView
+        android:id="@+id/mapvw_main"
+        android:layout_marginBottom="-25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imvw_arrow"
+        android:src="@drawable/arrow"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:id="@+id/imvw_delete"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/imvw_arrow"
+        android:src="@drawable/delete"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+
+    <ImageView
+        android:id="@+id/imvw_add"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imvw_arrow"
+        android:src="@drawable/add" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bbtn_delete"
+            android:text="Hapus Rute"
+            android:background="@drawable/button_delete_action"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="120dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/bbtn_create"
+            android:text="Buat Rute"
+            android:background="@drawable/button_create_action"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="120dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

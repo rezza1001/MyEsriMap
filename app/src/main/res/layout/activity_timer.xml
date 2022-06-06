@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".countdown.TimerActivity">
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/rple_center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:rb_color="#33E70E0E"
+        app:rb_duration="1000"
+        app:rb_radius="20dp"
+        app:rb_rippleAmount="1"
+        app:rb_scale="4" />
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_timer"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/txvw_count"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
